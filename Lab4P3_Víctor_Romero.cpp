@@ -38,9 +38,9 @@ int Ejercicio_1() {
 
 	//Salida de Reps
 	cout << "Letras que se repiten y el número de veces:" << endl;
+	vector<char> letras_Rep;
 	for (char letra : palabra) {
 		int reps = repeticiones(letra, palabra);
-		vector<char> letras_Rep;
 		if(reps > 1 && find(letras_Rep.begin(), letras_Rep.end(), letra) == letras_Rep.end()) {
 			cout << letra << ": " << reps << " veces" << endl;
 			letras_Rep.push_back(letra);
